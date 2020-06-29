@@ -6,8 +6,8 @@ static int centered = 1; // -c option
 static int min_width = 500;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Jetbrains mono:pixelsize=10:antialias=true:autohint=true"
-	"Noto Color Emoji:pixelsize=10:antialias=true:autohint:true"
+	"Jetbrains mono:size=10:antialias=true:autohint=true",
+	"Noto Color Emoji:pixelsize=10:antialias=true;autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
